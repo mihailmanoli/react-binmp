@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MENU } from "../constants";
+import "./navigation.css";
 
 export default function NavigationBar() {
   const getMenuItems = () => {
@@ -17,8 +18,8 @@ export default function NavigationBar() {
   };
 
   return (
-      <header>
-        <div className="menu">{getMenuItems()}</div>
+      <header className="menu">
+        {getMenuItems()}
       </header>
   );
 }

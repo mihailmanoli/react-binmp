@@ -1,6 +1,16 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./App.css";
-import { Root, Error, Home, About, Teams, Blog, Contact } from "./pages";
+import {
+  Root,
+  Error,
+  Home,
+  About,
+  Teams,
+  Blog,
+  Contact,
+  Testimonials,
+  Pricing
+} from "./pages";
 
 const routes = createBrowserRouter([
   {
@@ -10,7 +20,14 @@ const routes = createBrowserRouter([
     children: [
       { path: "/home", element: <Home /> },
       { path: "/about", element: <About /> },
-      { path: "/teams", element: <Teams /> },
+      {
+        path: "/pages",
+        children: [
+          { path: "/pages/teams", element: <Teams /> },
+          { path: "/pages/testimonials", element: <Testimonials /> },
+          { path: "/pages/pricing", element: <Pricing /> },
+        ],
+      },
       { path: "/blog", element: <Blog /> },
       { path: "/contact", element: <Contact /> },
     ],

@@ -1,0 +1,12 @@
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 35px;
+    max-width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+}

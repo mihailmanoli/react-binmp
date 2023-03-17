@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
 
 export default function Contact() {
   return (
-    <p>
-      <Link to="/home">Home</Link> - Contact
-    </p>
+    <>
+      <p>
+        <Link to="/home">Home</Link> - Contact
+      </p>
+      <h1>Contact</h1>
+    </>
   );
 }

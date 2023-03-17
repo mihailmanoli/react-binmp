@@ -5,7 +5,7 @@ export const MENU = {
     about: {
         name: "About"
     },
-    teams: {
+    "pages/teams": {
         name: "Pages"
     },
     blog: {
