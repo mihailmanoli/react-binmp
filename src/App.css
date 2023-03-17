@@ -1,7 +1,3 @@
-.App {
-  text-align: center;
-}
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +31,26 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: #21c0ff;
+}
+
+a:focus {
+  color: #fca80b;
+}
+
+a:hover {
+  color: #fca80b;
+}
+
+a:active {
+  color: #fca80b;
 }
